@@ -1,0 +1,7 @@
+{
+  "app_id": "my-service",
+  "service_base_url": "https://my-service-url/",
+  "auth_url": "my-authentication-service",
+  "base_url": "https://localhost:8080/",
+  "basic_token": "aasdfajdfskljalksdjfklajsdfljas"
+}

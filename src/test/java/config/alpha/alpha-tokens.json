@@ -1,0 +1,17 @@
+{
+
+  "test_token_users": [
+    {
+      "type": "user",
+      "user_name": "myusername@gmail.com",
+      "password": "password",
+      "role": "testuser"
+    },
+    {
+      "type": "admin",
+      "user_name": "admin@gmail.com",
+      "password": "password",
+      "role": "testadmin"
+    }
+  ]
+}
