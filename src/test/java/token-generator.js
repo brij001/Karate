@@ -11,14 +11,10 @@ function tokenGenerator(config){
         config.username = tokenData.test_token_users[i].user_name;
         config.password = tokenData.test_token_users[i].password;
         result = karate.call('classpath:auth/user-token.feature', config);
-        generatedTokens[tokenData.test_token_users[i].role] = {'token'   :  result.token,
-          'company_id'  :  tokenData.test_token_users[i].company_id,
-          'user_id'     :  tokenData.test_token_users[i].user_id};
+        generatedTokens[tokenData.test_token_users[i].role] = {'token'   :  result.token  };
       }
       config.username = null;
       config.password = null;
-      config.userId = null;
-      config.tpid = null;
     }
 
 

@@ -2,9 +2,11 @@
 Feature: USER Authentication
 
   Background:
-    * url baseURL + authURL
     * string  basic_token = 'Basic '+ authBasic
     * configure headers = { 'Content-Type': 'application/x-www-form-urlencoded' ,  'Authorization' : '#(basic_token)', 'transaction-id':'#(transcationID)'}
+
+    * def myurl1 = env == 'alpha' ? 'http://localhost:' + port : baseURL + authURL
+    * url myurl1
 
   Scenario: get USER auth token
 

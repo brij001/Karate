@@ -20,12 +20,14 @@ function fn() {
   config.baseURL = envData.base_url;
   config.serviceBaseURL = envData.service_base_url;
   config.authURL = envData.auth_url;
-
+  config.authBasic = envData.basic_token;
 
   var uuid = envData.app_id+'-AUTOMATION-' + java.util.UUID.randomUUID();
   config.transcationID = uuid;
 
+  config.port = karate.callSingle('classpath:start-mock.js');
   config.default_tokens = karate.callSingle('classpath:token-generator.js', config);
+
 
   return config;
 }

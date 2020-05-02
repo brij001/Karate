@@ -5,13 +5,13 @@
       "type": "user",
       "user_name": "myusername@gmail.com",
       "password": "password",
-      "role": "testuser"
+      "role": "user"
     },
     {
       "type": "admin",
       "user_name": "admin@gmail.com",
       "password": "password",
-      "role": "testadmin"
+      "role": "admin"
     }
   ]
 }
